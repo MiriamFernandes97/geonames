@@ -8,6 +8,6 @@
 <body>
     <h1>udhfkajkfljlfsk</h1>
     <p>djasdnksjdnak</p>
-    <img src="minionImage/minion_image.jpg">
+    <img src='minion_image.jpg' alt='minion image'/>
 </body>
 </html>
