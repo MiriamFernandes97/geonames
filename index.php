@@ -8,5 +8,6 @@
 <body>
     <h1>udhfkajkfljlfsk</h1>
     <p>djasdnksjdnak</p>
+    <img src="minionImage/minion_image.jpg">
 </body>
 </html>
