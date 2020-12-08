@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF 8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Miriam Fernandes">
+  <meta name="description" content="Geonames API using cURL,PHP,AJAX,and JSON">
+
+  <title>Geonames API</title>
+  <link rel="stylesheet" type="text/css" href="libs/css/style.css">
+
+  <link href="images/favicon.png" type="image/png" rel="icon">
+</head>
+<body>
+  <div class="container">
+    <table>
+      <th>API Name</th>
+      <th>API description</th>
+      <th></th>
+      <tr>
+        <td>1. Find nearest Address</td>
+        <td>Returns the nearest address for the given latitude/longitude.
+		  Latitude: <input id="userAddLat" type="number">
+		  <br>
+          Longitude: <input id="userAddLng" type="number">
+        
+        </td>
+        <td><button id="sbmtAddress">Submit</button></td>
+      </tr>
+      <tr>
+        <td>2. Find Countries' Neighbours</td>
+        <td> Returns information about a neighbouring country of the country the user selects.
+          <br>
+          Country Code: 
+          <select id="selCountry">
+			<option value="GB">GB</option>
+            <option value="FR">FR</option>
+          </select>
+        </td>
+        <td><button id="sbmtNeighbour">Submit</button></td>
+      </tr>
+      <tr>
+        <td>3. Find Nearby Wikipedia</td>
+        <td>Returns a wikipedia entry which is near to the lat and lang the user enters.
+          <br>
+		  Latitude: <input id="userWikiLat" type="number">
+		  <br>
+          Longitude: <input id="userWikiLng" type="number">
+
+        </td>
+        <td><button id="sbmtWiki">Submit</button></td>
+      </tr>
+    </table>
+   
+    <table>
+      <th>Results for Countries Neighbours</th>
+      <tr>
+        <td>Latitude:</td>
+        <td id="neighbourLat"></td>
+      </tr>
+      <tr>
+        <td>Longitude:</td>
+        <td id="neighbourLng"></td>
+      </tr>
+      <tr>
+        <td>Name:</td>
+        <td id="neighbourName"></td>
+      </tr>
+      <tr>
+        <td>Country Code:</td>
+        <td id="neighbourCode"></td>
+      </tr>
+   
+    </table>
+    <table>
+      <th>Results for Nearby Wikipedia</th>
+      <tr>
+        <td>Summary:</td>
+        <td id="wikiSummary"></td>
+      </tr>
+      <tr>
+        <td>Feature:</td>
+        <td id="wikiFeature"></td>
+      </tr>
+      <tr>
+        <td>Latitude:</td>
+        <td id="wikiLat"></td>
+      </tr>
+      <tr>
+        <td>Longitude:</td>
+        <td id="wikiLng"></td>
+      </tr>
+      <tr>
+        <td>Country Code:</td>
+        <td id="wikiCountryCode"></td>
+      </tr>
+	</table>
+	
+	<table>
+		<th>Results for Nearest address</th>
+		<tr>
+		  <td>Latitude:</td>
+		  <td id="addressLat"></td>
+		</tr>
+		<tr>
+		  <td>Longitude:</td>
+		  <td id="addressLng"></td>
+		</tr>
+		<tr>
+		  <td>Name:</td>
+		  <td id="addressName"></td>
+		</tr>
+		<tr>
+		  <td>Type of Location:</td>
+		  <td id="addressLocation"></td>
+		</tr>
+		<tr>
+		  <td>Country Name:</td>
+		  <td id="addressCountryName"></td>
+		</tr>
+	  </table>
+  
+  </div>
+
+  <div id="preloader"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha512-SFaNb3xC08k/Wf6CRM1J+O/vv4YWyrPBSdy0o+1nqKzf+uLrIBnaeo8aYoAAOd31nMNHwX8zwVwTMbbCJjA8Kg==" crossorigin="anonymous"></script>	
+  <script src="libs/js/script.js" type="application/javascript"></script>
+</body>
+</html>
